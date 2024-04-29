@@ -7,9 +7,10 @@ from django.conf import settings
 app_name = 'djangoapp'
 urlpatterns = [
     # # path for registration
-
+    path(route='logout', view=views.logout_request, name='logout'),
+     path(route='register', view=views.registration, name='register'),
     # path for login
-    # path(route='login', view=views.login_user, name='login'),
+    path(route='login', view=views.login_user, name='login'),
 
     # path for dealer reviews view
 
